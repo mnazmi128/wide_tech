@@ -1,0 +1,22 @@
+.loading-screen {
+  position: fixed;
+  width: calc(100%);
+  height: calc(100%);
+  z-index: 20;
+  background: var(--bg-loading-screen);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.1s, visibility 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-app.loading {
+  overflow: hidden;
+}
+
+.main-app.loading .loading-screen {
+  visibility: visible;
+  opacity: 1;
+}
